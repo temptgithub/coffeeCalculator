@@ -10,7 +10,11 @@
    <link href="style.css" rel="stylesheet" type="text/css" />
 
   <style>
-
+#myDIV {
+  width: 300px;
+  height: 300px;
+  background-image: url("img2.jpg");
+}
 
   </style>
 
@@ -19,7 +23,12 @@
 
 </head>
 
-<body style='background-image: url(“img1.jpg"); ' >
+<body id="myDIV">
+<script>
+function myFunction() {
+   document.getElementById("myDIV").style.backgroundImage = "url(img_img1.jpg)”;
+}
+</script>
 
 
   <h1 > <em> How much is that coffee costing you each year?<em> <h1>
