@@ -4,7 +4,7 @@ body {
   background: orange;
   background-size: cover;
   background-position: center;
-  color: rgba(44, 11, 136, 0.99);
+  color: rgba(246, 246, 248, 0.99);
   font-family: helvetica;
   font-size: 20;
 
@@ -13,7 +13,6 @@ body {
 p {
   font-size: 22px;
 }
-
 
 #input1 {
 
@@ -215,11 +214,11 @@ input[type="submit"] {
 }
 
 #results3 {
-  color: brown;
+  color: rgb(240, 50, 154);
 }
 
 #results4 {
-  color: brown;
+  color: brown
 }
 
 #resultska {

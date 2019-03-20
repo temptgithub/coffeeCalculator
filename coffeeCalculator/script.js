@@ -10,6 +10,7 @@ $(document).ready(function() {
 #input6 -- number of pods per box
 */
 //
+
   // attach click listener to the submit button.
 
  $("#submit1").click(function() {
@@ -21,8 +22,8 @@ $(document).ready(function() {
 
   });
 
- //-----------------Home Brewed 
- 
+ //-----------------Home Brewed
+
  $("#submit2").click(function() {
     //when clicked, create a variable holding the value of the input text box.
     console.log(typeof $("#input1").val());
@@ -73,7 +74,7 @@ $("#submit4").click(function() {
 function cafeCostyr(numCups, price) {
 
 var dayCups = parseInt($("#input1").val());
-var costPrcup = parseInt($("#input2").val());
+var costPrcup = parseFloat($("#input2").val());
 var storeBought;
 var totcafe = 50*5*dayCups*costPrcup;
 
@@ -87,14 +88,15 @@ storeBought = `Based on ${dayCups} cup(s) of coffee each day at a cost of $ ${co
 function homeCostyr(price, numCups) {
 
 var dayCups = parseInt($("#input1").val());
-var pricePerlb = parseInt($("#input3").val());
+var pricePerlb = parseFloat($("#input3").val());
 var homeBrewed;
 var pressOrfilter = 20;
 // based on recommended 14g of coffee per 8oz of water
 var lbspertyr = dayCups*14*50*5/454;
 var lbsCoffeeyr = Math.ceil(lbspertyr );
 
-var totHcafe = pressOrfilter + pricePerlb*lbsCoffeeyr;
+var numb =  pressOrfilter + pricePerlb*lbsCoffeeyr;
+var totHcafe = numb.toFixed(2);
 
 homeBrewed = `Based on ${dayCups} cup(s) of coffee each day at a cost of $ ${pricePerlb} per pound for coffee, you spend $ ${totHcafe}  each year if you made the coffee yourself.`;
 
@@ -105,40 +107,46 @@ homeBrewed = `Based on ${dayCups} cup(s) of coffee each day at a cost of $ ${pri
 function kerigrCostyr(numCups, machineCost) {
 
 var dayCups = parseInt($("#input1").val());
-var pricePerlb = parseInt($("#input3").val());
-var costOfmachine = parseInt($("#input4").val());
+var pricePerlb = parseFloat($("#input3").val());
+var costOfmachine = parseFloat($("#input4").val());
 var kerigrBrewed;
 var supplies = 15+10+10; // descaling=15,charcoal filter=10, reusable filter =10
 
 // calculations based on prior cost of coffee and using 18g of coffee per refillable pod
+
 var lbspertyr = dayCups*18*50*5/454;
 var lbsCoffeeyr = Math.ceil(lbspertyr );
 
 var lbsCoffeeyr = Math.ceil(lbspertyr );
-var totKrcafe = costOfmachine + supplies + pricePerlb*lbsCoffeeyr;
 
-kerigrBrewed = `Based on ${dayCups} cup(s) of coffee each day at a cost of $ ${pricePerlb} per pound for coffee, you spend $ ${totKrcafe}  each year if you made the coffee w refillable kerig.`;
+var numb = costOfmachine + supplies + pricePerlb*lbsCoffeeyr;
+var totKrcafe = numb.toFixed(2);
+
+kerigrBrewed = `Based on ${dayCups} cup(s) of coffee each day at a
+cost of $ ${pricePerlb} per pound for coffee, you spend $ ${totKrcafe}
+ each year if you made the coffee w refillable kerig.`;
 
   return  kerigrBrewed
 }
-
 //---------------  using  kerig bought pods and machine below
 
 
 function kerigpCostyr(numCups, machineCost) {
 
 var dayCups = parseInt($("#input1").val());
-var costOfmachine = parseInt($("#input4").val());
-var pricePerbox = parseInt($("#input5").val());
+var costOfmachine = parseFloat($("#input4").val());
+var pricePerbox = parseFloat($("#input5").val());
 var podsPerbox = parseInt($("#input6").val());
 var kerigPodbrewed;
-var supplies = 15+10; // descaling=15,charcoal filter=10, NO reusable filter 
+var supplies = 15+10; // descaling=15,charcoal filter=10, NO reusable filter
 
 // calculations based on prior cost of coffee and using 18g of coffee per refillable pod
 var pricePerpod = pricePerbox/podsPerbox;
 // calculations  50 week year and 5 working days a week
 var tCostofPods = dayCups*pricePerpod*50*5;
-var totKPcafe = costOfmachine + supplies + tCostofPods;
+
+var numb =  costOfmachine + supplies + tCostofPods;
+var totKPcafe = numb.toFixed(2);
 
 kerigPodbrewed = `Based on ${dayCups} cup(s) of coffee each day at a cost of $ ${pricePerbox} per box of ${podsPerbox}  pods , you spend $ ${totKPcafe}  each year using Kerig and bought PODs.`;
 
