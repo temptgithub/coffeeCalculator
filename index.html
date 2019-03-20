@@ -2,23 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Annual Coffee Costs</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="me" content="SitePoint">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-   <link href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Annual Coffee Costs</title>
+	<meta name="description" content="Coffee Calculator">
+	<meta name="me" content="SitePoint">
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous">
+	</script>
+
+	<link href="https://fonts.googleapis.com/css?family=Cabin:700|Lora:400,400i,700" rel="stylesheet">
+
+<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+ 
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+
+	<body id="page-top">
+
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-sm navbar-light fixed-top" id="mainNav">
+			<div class="container">
+			
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+           
+              </ul>
+          </div><!-- END navbarrResponsive -->
+      </div><!-- END container -->
+  </nav>
+
+  <!-- END NAVBAR -->
+
+
+   <!-- MASTHEAD -->
+
+   <header class="masthead">
+       <div class="intro-body">
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-8 mx-auto">
+                       <h1 class="brand-heading text-drop">Coffee Calculator<span class="display-1 text-warning"></span></h1>
+                       <p class="intro-text tag-line">Use this calcultor to see how much money you spend on coffee!</p>
+                       <a href="#menu" class="btn btn-circle js-scroll-trigger">
+                           <i class="fa fa-angle-double-down animated"></i>
+                       </a>
+                   </div><!-- end col-lg-8 -->
+               </div><!-- end row -->
+           </div><!-- end row -->
+       </div><!-- end intro-body -->
+   </header>
+
+   <!-- END MASTHEAD -->
 
   <style>
 #myDIV {
-  width: 900px;
-  height: 900px;
-  background-image: url("img1.jpg");
+  width: 300px;
+  height: 300px;
+  background-image: url("coffee.jpg");
 }
 
   </style>
 
- 
+
 
 
 </head>
@@ -26,79 +84,100 @@
 <body id="myDIV">
 <script>
 function myFunction() {
-   document.getElementById("myDIV").style.backgroundImage = "url(img1.jpg)”;
+   document.getElementById("myDIV").style.backgroundImage = "url(coffee.jpg)”;
 }
 </script>
 
 
-  <h1 > <em> How much is that coffee costing you each year?<em> <h1>
- <h6>  (make sure input fields are populated and with numbers entered to calculate)
-  <p > <font color="red">1. How many cups of coffee do you drink each day?
+  <h1> <em><font color="brown"> How much is that coffee costing you each year?<em> <h1>
+ <h6>  (make sure input fields are populated and with numbers in order to calculate)
+  <p> <font color="brown">1. How many cups of coffee do you drink each day?
   <br>(this number will be used in subsequent calculations.. Please enter a number: ) </font>
-  <input id="input1" type="text" /> <br>
-
+  <input id="input1" type="text" /><br>
+<div class="fancy"></div>
 
     <!-- <button id="submit1" > Submit Sentence </button>  -->
-   <p>2. How much do you typically pay for that drink?<br>
+   <p><font color="brown">2. How much do you typically pay for that drink?<br>
        (You may exclude tips.)
     <input id="input2" type="text" />
 
   </br> 3. Click "Calculate" Button to find out how much you spend each year from buying your coffee from a coffee shop.</br>
   <button id="submit1"> calculate </button>
+  
   </br>
 
   <p>Resulting annual cost for buying your coffee from a shop:</p>
   <p id="results1"> </p>
------------------------------------------
+
+<div class="fancy"></div>
+
 <!-- xxxxxxxxxxx  home brew below xxxxxxxx note variables xxxxxxxxxxxxxx -->
 <h2>  If you Brewed the coffee yourself using French Press or Filter ($20), this is how much you spend. </h2>
 
-   <p>A. How Much do you pay for one pound of your favorite coffee? (price per pound)
+   <p>!. How Much do you pay for one pound of your favorite coffee? (price per pound)
      <input id="input3" type="text" /
 
   </p>
-  </br> B. Click "Calculate" Button to find out how much you would spend each year if you made it yourself.</br>
+  </br> 2. Click "Calculate" Button to find out how much you would spend each year if you made it yourself.</br>
   <button id="submit2"> calculate </button>
   </br>
 
   <p>Resulting annual cost for home brewing your coffee yourself:</p>
   <p id="results2"> </p>
 
------------------------------------------
-<!-- xxxxxxxxxxx kerig refil filter below xxx xxxxxxxxxx -->
-<h3>  <font color="cyan"> If you Brewed the coffee yourself using a Kerig Coffee Machine and a refillable kerig filter , this is how much you spend for 1 year. </font></h3>
+<div class="fancy"></div>
 
-   <p>I. How Much does your Coffee Machine cost?
+<!-- xxxxxxxxxxx kerig refil filter below xxx xxxxxxxxxx -->
+<h3>  <font color="brown"> If you Brewed the coffee yourself using a Kerig Coffee Machine and a refillable kerig filter , this is how much you spend for 1 year. </font></h3>
+
+   <p>1. How Much does your Coffee Machine cost?
      <input id="input4" type="text" /
 
   </p>
-  </br>II. Click "Calculate" Button to find out how much you would spend each year if you made it using a Kerig Machine w/ refillable pod.</br>
+  </br>2. Click "Calculate" Button to find out how much you would spend each year if you made it using a Kerig Machine w/ refillable pod.</br>
   <button id="submit3"> calculate </button>
   </br>
 
   <p>Resulting annual cost for home brewing your coffee yourself with refillable Kerig:</p>
   <p id="results3"> </p>
------------------------------------------
+<div class="fancy"></div>
 <!-- xx kerig PODS BOUGHT below xxx xxxxxxxxxx -->
-<h3>  <font color="yellow"> If you Brewed the coffee yourself using a Kerig Coffee Machine and bought Pods , this is how much you spend for 1 year. </font></h3>
+<h3>  <font color="brown"> If you Brewed the coffee yourself using a Kerig Coffee Machine and bought Pods , this is how much you spend for 1 year. </font></h3>
 
-   <p>I. How Much does a box of Pods cost?
+   <p>1. How Much does a box of Pods cost?
      <input id="input5" type="text" /
      </p>
-  <p>II. How many pods are in a box?
+  <p>2. How many pods are in a box?
      <input id="input6" type="text" /
 
 
   </p>
-  </br>III. Click "Calculate" Button to find out how much you would spend each year if you made it using a Kerig Machine w/ purchased pod.</br>
+  </br>3. Click "Calculate" Button to find out how much you would spend each year if you made it using a Kerig Machine w/ purchased pod.</br>
   <button id="submit4"> calculate </button>
   </br>
 
   <p>Resulting annual cost for home brewing your coffee yourself with purchased Kerig Pods :</p>
   <p id="results4"> </p>
+
+  <footer>
+    <div class="container text-center">
+            <div class="btn-group-vertical btn-group-lg my-5" role="group" aria-label="Basic Example">
+    
+<span class="network-name">
+      <button type="button" class="btn btn-info"><i class="fab fa-facebook square"></i><a href="https://www.facebook.com/" >Facebook</a></button>
+<button type="button" class="btn btn-info"><i class="fab fa-twitter square"></i><a href="https://www.Twitter.com/" >Twitter</a></button>
+
+<button type="button" class="btn btn-info"><i class="fab fa-github square"></i><a href="https://www.github.com/" >Github</a></button>
+
+<button type="button" class="btn btn-info"><i class="fab fa-google-plus square"></i><a href="https://www.google.com/" >Google</a></button>
+</span>
+     
+
+ 
   <!--   <script src="jquery-3.3.1.min.js"></script> -->
   <script src="script.js"></script>
   <!-- script  at  end  -->
 </body>
 
 </html>
+

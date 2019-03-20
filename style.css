@@ -1,17 +1,140 @@
 body {
-
+  font-family: "Lora", sans-serif;
   text-align: left;
-  background: orange;
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  color: rgba(246, 246, 248, 0.99);
-  font-family: helvetica;
-  font-size: 20;
+  background-color: #c18664;
+  font-size: 20px;
 
+
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h2, h3 {
+    font-family: "Lora", sans-serif;
+    font-weight: 80;
+    margin: 0 0 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 p {
+  font-family: "Lora", sans-serif;
+  font-weight: 80;
+  text-transform: uppercase;
   font-size: 22px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+.masthead{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 200px 0;
+    text-align: center;
+    color:white;
+    background: url('coffee.jpg') no-repeat bottom center scroll;
+    background-color: black;
+    background-size: cover;
+}
+
+.masthead .intro-body{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.masthead .intro-body .brand-heading{
+    font-size: 50px;
+}
+
+.masthead .intro-body .intro-text{
+    font-size: 18px;
+}
+
+@media(min-width: 400px) {
+    .masthead {
+        height: 50%;
+        padding: 0;
+    }
+
+    .masthead .intro-body .brand-heading {
+        font-size: 75px;
+    }
+    .masthead .intro-body .intro-text{
+        font-size: 17px;
+    }
+
+
+.btn-circle{
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    line-height: 45px;
+    transition: background .03s ease-in-out;
+    color: blue;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
+
+.btn-circle:focus, .btn-circle:hover{
+    color: white;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+}
+#mainNav {
+    font-family: 'Cabin', sans-serif;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      border-bottom: 0px solid white;
+      background-color: transparent;
+}
+
+#mainNav .navbar-toggler {
+      font-size: 20px;
+      padding: 11px;
+      color: white;
+      border: 5px solid white;
+}
+
+#mainNav  .navbar-brand{
+    font-weight: 700;
+}
+#mainNav a{
+    color: White;
+}
+
+#mainNav .navbar-nav .nav-item{
+    transition: background 0.3s ease-in-out;
+}
+
+
+.fancy {
+  padding : em;
+  width: 100%;
+  height: 5px;
+  box-sizing: border-box;
+  background-color: #E4E4D9;
+  background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 75%, #9f8fa4 75%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
 }
 
 #input1 {
@@ -19,14 +142,15 @@ p {
   border: 0;
   padding: 10px;
   font-size: 18px;
-  background-color: rgba(255, 255, 255,0.7);
-  width: 20px;
+  background-color: white;
+  width: 100px;
   height: 25px;
   border-radius: 15px;
-  color: blue;
+  color: red;
   margin-bottom: 40px;
 
 }
+
 
 
 #input2 {
@@ -50,7 +174,7 @@ p {
   padding: 10px;
   font-size: 18px;
   background-color: white;
-  width: 80px;
+  width: 100px;
   height: 25px;
   border-radius: 15px;
   color: red;
@@ -64,10 +188,10 @@ p {
   padding: 10px;
   font-size: 18px;
   background-color: white;
-  width: 80px;
+  width: 100px;
   height: 25px;
   border-radius: 15px;
-  color: rgb(47, 0, 255);
+  color: red;
   margin-bottom: 10px;
 
 }
@@ -78,10 +202,10 @@ p {
   padding: 10px;
   font-size: 18px;
   background-color: white;
-  width: 80px;
+  width: 100px;
   height: 25px;
   border-radius: 15px;
-  color: rgb(47, 0, 255);
+  color: red;
   margin-bottom: 10px;
 
 }
@@ -92,10 +216,10 @@ p {
   padding: 10px;
   font-size: 18px;
   background-color: white;
-  width: 80px;
+  width: 100px;
   height: 25px;
   border-radius: 15px;
-  color: rgb(47, 0, 255);
+  color: red;
   margin-bottom: 10px;
 
 }
@@ -105,18 +229,26 @@ p {
   border: 5;
   box-sizing: border-box;
   padding: 1px;
-  font-size: 12px;
+  font-size: 15px;
   background-color: yellow;
-  width: 120px;
-  height: 55px;
+  width: 100px;
+  height: 50px;
   border-radius: 15px;
-  color: blue;
-  text-align:  center;
+  color: red;
+  text-align: center;
 
 }
 
+.container{
+  margin-top: 150px;
+}
+
+.text-center {
+  text-align: center;
+}
+
 #submit1:hover{
-  background-color: purple;
+  background-color: rgba(0, 255, 21, 0.911);
 }
 
 #submit2 {
@@ -124,8 +256,7 @@ p {
   border: 5;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 15px;
   background-color: yellow;
   width: 100px;
   height: 50px;
@@ -136,7 +267,7 @@ p {
 }
 
 #submit2:hover{
-  background-color: rgb(0, 255, 242);
+  background-color: rgba(0, 255, 21, 0.911);
 }
 
 
@@ -145,8 +276,7 @@ p {
   border: 5;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 15px;
   background-color: yellow;
   width: 100px;
   height: 50px;
@@ -158,7 +288,7 @@ p {
 
 
 #submit3:hover{
-  background-color: rgb(255, 0, 128);
+  background-color: rgba(0, 255, 21, 0.911);
 }
 
 #submit4 {
@@ -166,8 +296,7 @@ p {
   border: 5;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 15px;
   background-color: yellow;
   width: 100px;
   height: 50px;
@@ -179,7 +308,7 @@ p {
 
 
 #submit4:hover{
-  background-color: rgb(255, 0, 128);
+  background-color: rgba(0, 255, 21, 0.911);
 }
 
 input[type="submit"] {
@@ -206,25 +335,26 @@ input[type="submit"] {
 
 
 #results1 {
-  color: red;
+  color:white;
 }
 
 #results2 {
-  color: green;
+  color: white;
 }
 
 #results3 {
-  color: rgb(240, 50, 154);
+  color: white;
 }
 
 #results4 {
-  color: brown
+  color: white;
 }
 
-#resultska {
-  color: blue;
+footer{
+    padding: 50px 0;
 }
-
-#resultskb {
-  color: purple;
+.fa-clickable {
+ 
+    cursor:pointer;
+    outline:none;
 }
