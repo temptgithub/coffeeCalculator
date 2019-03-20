@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Annual Coffee Costs</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="me" content="SitePoint">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+#myDIV {
+  width: 900px;
+  height: 900px;
+  background-image: url("img1.jpg");
+}
+
+  </style>
+
+ 
+
+
+</head>
+
+<body id="myDIV">
+<script>
+function myFunction() {
+   document.getElementById("myDIV").style.backgroundImage = "url(img1.jpg)”;
+}
+</script>
+
+
+  <h1 > <em> How much is that coffee costing you each year?<em> <h1>
+ <h6>  (make sure input fields are populated and with numbers entered to calculate)
+  <p > <font color="red">1. How many cups of coffee do you drink each day?
+  <br>(this number will be used in subsequent calculations.. Please enter a number: ) </font>
+  <input id="input1" type="text" /> <br>
+
+
+    <!-- <button id="submit1" > Submit Sentence </button>  -->
+   <p>2. How much do you typically pay for that drink?<br>
+       (You may exclude tips.)
+    <input id="input2" type="text" />
+
+  </br> 3. Click "Calculate" Button to find out how much you spend each year from buying your coffee from a coffee shop.</br>
+  <button id="submit1"> calculate </button>
+  </br>
+
+  <p>Resulting annual cost for buying your coffee from a shop:</p>
+  <p id="results1"> </p>
+-----------------------------------------
+<!-- xxxxxxxxxxx  home brew below xxxxxxxx note variables xxxxxxxxxxxxxx -->
+<h2>  If you Brewed the coffee yourself using French Press or Filter ($20), this is how much you spend. </h2>
+
+   <p>A. How Much do you pay for one pound of your favorite coffee? (price per pound)
+     <input id="input3" type="text" /
+
+  </p>
+  </br> B. Click "Calculate" Button to find out how much you would spend each year if you made it yourself.</br>
+  <button id="submit2"> calculate </button>
+  </br>
+
+  <p>Resulting annual cost for home brewing your coffee yourself:</p>
+  <p id="results2"> </p>
+
+-----------------------------------------
+<!-- xxxxxxxxxxx kerig refil filter below xxx xxxxxxxxxx -->
+<h3>  <font color="cyan"> If you Brewed the coffee yourself using a Kerig Coffee Machine and a refillable kerig filter , this is how much you spend for 1 year. </font></h3>
+
+   <p>I. How Much does your Coffee Machine cost?
+     <input id="input4" type="text" /
+
+  </p>
+  </br>II. Click "Calculate" Button to find out how much you would spend each year if you made it using a Kerig Machine w/ refillable pod.</br>
+  <button id="submit3"> calculate </button>
+  </br>
+
+  <p>Resulting annual cost for home brewing your coffee yourself with refillable Kerig:</p>
+  <p id="results3"> </p>
+-----------------------------------------
+<!-- xx kerig PODS BOUGHT below xxx xxxxxxxxxx -->
+<h3>  <font color="yellow"> If you Brewed the coffee yourself using a Kerig Coffee Machine and bought Pods , this is how much you spend for 1 year. </font></h3>
+
+   <p>I. How Much does a box of Pods cost?
+     <input id="input5" type="text" /
+     </p>
+  <p>II. How many pods are in a box?
+     <input id="input6" type="text" /
+
+
+  </p>
+  </br>III. Click "Calculate" Button to find out how much you would spend each year if you made it using a Kerig Machine w/ purchased pod.</br>
+  <button id="submit4"> calculate </button>
+  </br>
+
+  <p>Resulting annual cost for home brewing your coffee yourself with purchased Kerig Pods :</p>
+  <p id="results4"> </p>
+  <!--   <script src="jquery-3.3.1.min.js"></script> -->
+  <script src="script.js"></script>
+  <!-- script  at  end  -->
+</body>
+
+</html>
