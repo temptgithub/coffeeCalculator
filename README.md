@@ -6,4 +6,4 @@ https://coffeecalc--templetse.repl.co/
 <p>
     <img src="https://github.com/temptgithub/coffeeCalculator/blob/master/coffee.jpg" width="220" height="240" />
 </p>
-![ScreenShot](https://raw.github.com/temptgithub/coffeeCalculator/coffee.jpg)
+![ScreenShot](https://github.com/temptgithub/coffeeCalculator/blob/master/coffee.jpg)
