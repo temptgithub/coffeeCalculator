@@ -4,4 +4,4 @@ This program is written using - Javascript, jQuery, HTML, CSS.
 Click on the following link to try it out: 
 https://coffeecalc--templetse.repl.co/
 
-![ScreenShot](https://raw.githubusercontent.com/coffeeCalculator/coffee.jpg)
+![ScreenShot](https://github.com/temptgithub/coffeeCalculator/coffee.jpg)
